@@ -1,0 +1,1267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(44, 1, 44);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(31, 2, 31);
+    width: 11px;
+    border-radius: 20px;
+}
+
+body{
+    background-color: rgb(10, 2, 10);
+}
+
+nav{
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(31, 2, 31);
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 3000;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navmenu{
+    width: 10%;
+    height: 15vh;
+    background-color: transparent;
+}
+
+.sidebar{
+    position: fixed;
+    margin-top: 10px;
+    left: -250px;
+    width: 250px;
+    height: 35vh;
+    background-color: rgb(27, 4, 35);
+    border-radius: 20px;
+    transition: all .5s ease;
+    z-index: 11;
+}
+
+.sidebar header{
+    font-size: 22px;
+    padding-right: 5vh;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(26, 1, 26);
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+.sidebar ul li:hover a{
+    padding-left: 50px;
+
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#list form #searchbar, #searchmenu{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background-color: purple;
+    border-radius: 3%;
+}
+
+label #btn{
+    left: 5%;
+    top: 5vh;
+    font-size: 35px;
+    color: white;
+    padding: 4px 6px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 3vh;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+.navlogo{
+    left: 30%;
+    position: absolute;
+}
+
+.navlogo a h2{
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: purple;
+        transition: all .5s;
+}
+.navlogo a h2:hover{
+    font-size: 40px;
+    color: white;
+}
+ #logo{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+#logo:hover{
+    color: purple;
+}
+
+.navsearch{
+    margin-left:47%;
+    position: relative;
+}
+
+#search-bar{
+    width: 300px;
+    padding-left: 10%;
+    height: 30px;
+}
+
+#search{
+    position: absolute;
+    left: 80%;
+    top: 3px;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+}
+
+main{
+    width: 100%;
+    min-height: 800px;
+}
+
+.slideshow{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#imageslide1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/one.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#imageslide2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/two.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+
+}
+#imageslide3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/three.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#imageslide4{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/four.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#imageslide5{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/five.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#imageslide6{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/six.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#imageslide7{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/seven.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#imageslide8{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/eight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#imageslide9{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/nine.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#imageslide10{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/ten.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.swiper .swiper-button-prev{
+    color: blueviolet;
+}
+
+.swiper .swiper-button-next{
+    color: blueviolet;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: white;
+}
+
+.slideshow-text{
+    position: absolute;
+    width: 100%;
+    top: 45vh;
+    z-index: 2000;
+}
+
+.slideshow-text h2{
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+
+}
+
+.videos{
+    min-height: 500px;
+}
+
+.trending-heading, .afrobeat-heading, .hippop-heading{
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending-heading h2, .afrobeat-heading h2, .hippop-heading h2{
+    color: white;
+}
+
+.trending-heading a i, .afrobeat-heading a i, .hippop-heading a i{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+.trending-heading a i:hover, .afrobeat-heading a i:hover, .hippop-heading a i:hover{
+    color: purple;
+    font-size: 35px;
+}
+
+.trending{
+    width: 100%;
+    min-height: 300px;
+    margin-top: 20vh;
+}
+
+
+
+.trending .trending-video, .afrobeat .afrobeat-video, .hippop .hippop-video{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trending-video video, .afrobeat-video video, .hippop-video video{
+    width: 300px;
+    height: 200px;
+}
+
+.trending-video .two, .afrobeat-video .two, .hippop-video .two{
+    text-align: center;
+}
+
+.trending-video .two h4, .afrobeat-video .two h4, .hippop-video .two h4{
+    color: white;
+    font-size: 20px;
+    font-family: Gabona;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.trending-video .two h4:hover, .afrobeat-video .two h4:hover, .hippop-video .two h4:hover{
+    color: purple;
+}
+
+.trending-video .two p, .afrobeat-video .two p, .hippop-video .two p{
+    color: white;
+    font-size: 18px;
+    font-family: Gabona;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.trending-video .three, .afrobeat-video .three, .hippop-video .three {
+    text-align: center;
+}
+
+.trending-video .three a, .afrobeat-video .three a, .hippop-video .three a{
+    color: purple;
+    font-size: 25px;
+    text-align: center;
+    font-family: Calibri;
+    font-weight: 300;
+    transition: all .5s ease-in-out;
+}
+
+.trending-video .three a:hover, .afrobeat-video .three a:hover, .hippop-video .three a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.trending-video .three a i, .afrobeat-video .three a i, .hippop-video .three a i{
+    margin-left: 3%;
+}
+
+.afrobeat, .hippop{
+    width: 100%;
+    min-height: 300px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.container{
+    position: relative;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.card-hover{
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    position: absolute;
+}
+
+.card-hover:hover{
+    backdrop-filter: transparent(100px );
+}
+
+.card-hover img{
+    border-radius: 70%;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.container .card .content{
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content img{
+    width: 100%;
+    height: 200px;
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -100px;
+    right: 30px;
+    font-size: 6em;
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+.container .card .content h3{
+    z-index: 1;
+    font-size: 1.8em;
+    color: #fff;
+}
+.container .card .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .card .content a{
+    position: relative;
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    margin-top: 20vh;
+    position: relative;
+    width: 100%;
+    background-color: rgb(1, 1, 19);
+    min-height: 200px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icons, footer .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icons li a, footer .menu li a{
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+}
+
+footer .social_icons li a:hover{
+    transform: translateY(-10px);
+    font-size: 25px;
+}
+
+footer .menu li a{
+    font-size: 16px;
+    margin: 0 10px;
+    color: white;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+}
+
+footer .menu li a:hover{
+    color: purple;
+    font-size: 18px;
+}
+
+footer p{
+    color: purple;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:url(/images/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+.contact{
+    position: fixed;
+    top:
+     80vh;
+    left: 75%;
+    z-index: 300002;
+}
+
+.contact a{
+    padding: 6px 10px;
+    color: white;
+    background-color: purple;
+}
+
+.cont{
+    display: none;
+}
+
+
+@media screen and (max-width:700px) {
+    nav{
+        width: 100%;
+        height: 15vh;
+        background-color: rgb(31, 2, 31);
+    }
+    
+    .navmenu{
+        width: 10%;
+        height: 15vh;
+        background-color: transparent;
+    }
+    
+    .sidebar{
+        left: -80px;
+        width: 80px;
+        margin-top: 15px;
+        height: 100vh;
+        background-color: rgb(1, 1, 19);
+        transition: all .5s ease;
+    }
+    
+    .sidebar header{
+        font-size: 16px;
+        color: white;
+    }
+    
+    .sidebar ul a{
+        height: 100%;
+        width: 100%;
+        line-height: 40px;
+        font-size: 14px;
+        color: white;
+        padding-left: 20px;
+    }
+    
+    .sidebar ul li:hover a{
+        padding-left: 20px;
+    
+    }
+    
+    .sidebar ul a i{
+        margin-right: 9px;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    label #btn,label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background-color: purple;
+        border-radius: 3%;
+    }
+    
+    label #btn{
+        left: 5%;
+        top: 30px;
+        font-size: 16px;
+        color: white;
+        padding: 4px 9px;
+        transition: all .5s;
+    }
+    
+    label #cancel{
+        z-index: 1111;
+        left: 100px;
+        font-size: 17px;
+        color: white;
+        padding: 4px 9px;
+        transition: all .5s ease;
+    }
+    
+    #check:checked ~ .sidebar{
+        left: 0;
+    }
+    
+    #check:checked ~ label #btn{
+        left: 120px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    #check:checked ~ label #cancel{
+        left: 100px;
+    }
+
+
+    .navlogo{
+        margin-left: 5%;
+    }
+    
+    .navlogo a h2{
+        font-size: 18px;
+        margin-left: -43%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: purple;
+        transition: all .5s;
+    }
+    .navlogo a h2:hover{
+        font-size: 20px;
+        color: white;
+    }
+     #logo{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    }
+    #logo:hover{
+        color: purple;
+    }
+
+    .navsearch{
+        display: inline;
+        position: relative;
+        margin-right: 5%;
+    }
+    
+    #search-bar{
+        width: 200px;
+        height: 30px;
+    }
+    
+    #search{
+        position: absolute;
+        left: 87%;
+        top: 3px;
+        color: black;
+        font-size: 20px;
+        background-color: white;
+    }
+
+    .videos{
+        margin-top: 30vh;
+    }
+
+    .trending .trending-video, .afrobeat .afrobeat-video, .hippop .hippop-video{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .trending-video .one video, .afrobeat-video .one video, .hippop-video .one video{
+        width: 400px;
+        height: 200px;
+    }
+    
+    .trending-video .two, .afrobeat-video .two, .hippop-video .two{
+        text-align: center;
+    }
+    
+    .trending-video .two h4, .afrobeat-video .two h4, .hippop-video .two h4{
+        color: white;
+        font-size: 18px;
+    }
+    
+    
+    .trending-video .two p, .afrobeat-video .two p, .hippop-video .two p{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .trending-video .three, .afrobeat-video .three, .hippop-video .three {
+        text-align: center;
+    }
+
+    .trending-video .three a, .afrobeat-video .three a, .hippop-video .three a{
+        font-size: 17px;
+    }
+    
+    
+    .trending-video .three a i, .afrobeat-video .three a i, .hippop-video .three a i{
+        margin-left: 3%;
+    }
+    
+    .afrobeat, .hippop{
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .afrobeat{
+        margin-top: 5vh;
+    }
+    
+    .music-cards{
+        margin: 10vh 0 0 5%;
+        width: 90%;
+        min-height: 700px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .music-cards button{
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        border-radius: 20%;
+    }
+    
+    
+    .nigeria-artist, .african-artist, .international{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 7vh;
+    }
+    
+    .nigeria-artist button img, .african-artist img, .international img{
+        width: 1000;
+        height: 300px;
+    }
+    
+    .music-cards p{
+        font-size: 15px;
+    }
+    
+    .music-cards a{
+        position: absolute;
+        top: 250px;
+        left: 10%;
+        padding: 3px 8px;
+        border-radius: 50%;
+        background-color: purple;
+    }
+    
+    .music-cards i{
+        padding-top: 50%;
+        font-size: 20px;
+    }
+    
+    .music-cards i:hover{
+        font-size: 22px;
+    }
+
+    footer{
+        margin-top: 60vh;
+    }
+        
+    .contact{
+        position: fixed;
+        top: 85vh;
+        left: 85%;
+        z-index: 300002;
+    }
+    
+    #cnct{
+        padding: 6px 10px;
+        color: white;
+        background-color: purple;
+        display: none;
+    }
+    
+    .contact .cont{
+        display: block;
+        font-size: 20px;
+        transition: all .5s ease-in-out;
+        border-radius: 50%;
+    }
+
+    .contact .cont:hover{
+        color: white;
+        font-size: 25px;
+        background: linear-gradient(to right, #8a099b,#290921);
+    }
+
+
+
+    
+}
+
+@media (max-width:900px) {
+    nav{
+        width: 100%;
+        height: 15vh;
+        top: 15vh;
+    }
+    
+    .navmenu{
+        width: 10%;
+        height: 15vh;
+    }
+    
+    .sidebar{
+        left: -200px;
+        width: 200px;
+        margin-top: 10px;
+        height: 100vh;
+    }
+    
+    .sidebar header{
+        font-size: 18px;
+        color: white;
+        line-height: 70px;
+    }
+    
+    .sidebar ul a{
+        height: 100%;
+        width: 100%;
+        line-height: 40px;
+        font-size: 16px;
+        color: white;
+        padding-left: 30px;
+    }
+    
+    .sidebar ul li:hover a{
+        padding-left: 35px;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    label #btn,label #cancel{
+        border-radius: 3%;
+    }
+    
+    label #btn{
+        left: 5%;
+        top: 5vh;
+        font-size: 20px;
+        padding: 4px 9px;
+    }
+    
+    label #cancel{
+        z-index: 1111;
+        left: -150px;
+        top: 3vh;
+        font-size: 25px;
+        color: white;
+        padding: 4px 9px;
+    }
+    
+    #check:checked ~ .sidebar{
+        left: 0;
+    }
+    
+    #check:checked ~ label #btn{
+        left: 200px;
+        opacity: 0;
+    }
+    
+    #check:checked ~ label #cancel{
+        left: 150px;
+    }
+
+    .navlogo{
+        margin-left: 1%;
+    }
+    
+    .navlogo a h2{
+            font-size: 22px;
+            color: purple;
+    }
+    .navlogo a h2:hover{
+        font-size: 25px;
+        color: white;
+    }
+     #logo{
+        color: white;
+    }
+    #logo:hover{
+        color: purple;
+    }
+    
+    .navsearch{
+        /*margin-left: 35%;*/
+        position: relative;
+    }
+    
+    #search-bar{
+        width: 200px;
+        height: 30px;
+        outline: none;
+    }
+    
+    #search{
+        position: absolute;
+        left: 87%;
+        top: 3px;
+        color: black;
+        font-size: 20px;
+        background-color: white;
+    }
+
+    .slideshow{
+        width: 100%;
+        height: 300px;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .slideshow-text{
+        height: 30px;
+    }
+    
+    .slideshow-text h2{
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 30px;
+    }
+
+    .trending{
+        margin-top: 30vh;
+    }
+
+
+    .trending-video video, .afrobeat-video video, .hippop-video video{
+        width: 200px;
+    }
+
+    .afrobeat, .hippop{
+        height: 200%;
+    }
+
+    .nigeria-artist, .african-artist, .international{
+        width: 200px;
+    }
+
+    .contact a{
+        font-size: 14px;
+    }
+
+    .contact a i{
+        margin-left: 5px;
+    }
+
+    
+
+}
+
+@media screen and (max-width:400px){
+    nav{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(31, 2, 31);
+    }
+    
+    .navmenu{
+        width: 10%;
+        height: 15vh;
+        background-color: transparent;
+    }
+    
+    .sidebar{
+        position: fixed;
+        left: -300px;
+        width: 100px;
+        height: 50vh;
+        margin-top: 30px;
+        background-color: rgb(1, 1, 19);
+    }
+    
+    .sidebar header{
+        font-size: 10px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        background-color: rgb(26, 1, 26);
+        user-select: none;
+    }
+    
+    .sidebar ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 35px;
+        font-size: 10px;
+        color: white;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid black;
+    }
+    
+    ul li:hover a{
+        padding-left: 10px;
+    }
+    
+    .sidebar ul a i{
+        margin-right: 8px;
+    }
+    
+    #list form #searchbar, #searchmenu{
+        display: block;
+        position: relative;
+    }
+    #list form #searchbar{
+        width: 50px;
+        top: 4vh;
+        left: 22%;
+
+    }
+
+    #check{
+        display: none;
+    }
+    
+
+    label #btn,label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background-color: purple;
+        border-radius: 3%;
+    }
+    
+    label #btn{
+        left: 3%;
+        top: 5vh;
+        font-size: 9px;
+        color: white;
+        padding: 4px 9px;
+        transition: all .5s ease-in-out;
+    }
+    
+    label #cancel{
+        z-index: 1111;
+        left: -70px;
+        top: 4vh;
+        font-size: 10px;
+        color: white;
+        padding: 4px 9px;
+        transition: all .1s ease;
+    }
+    
+    #check:checked ~ .sidebar{
+        left: 0;
+    }
+    
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    #check:checked ~ label #cancel{
+        left: 70px;
+    }
+
+    .navlogo{
+        margin-left: -2%;
+        margin-top: 4vh;
+        z-index: 1;
+        display: inline;
+    }
+
+    .navlogo a{
+        display: inline;
+    }
+    
+    .navlogo a h2{
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        transition: all .5s;
+    }
+    .navlogo a h2:hover{
+        font-size: 14px;
+        color: white;
+    }
+     #logo{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    }
+    #logo:hover{
+        color: purple;
+    }
+
+    #search-bar{
+        /*margin-top: 4vh;*/
+        width: 150px;
+    }
+
+    .navsearch{
+        margin-top: 4vh;
+    }
+
+    .slideshow{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20vh;
+    
+    }
+
+    .slideshow #imageslide1,.slideshow #imageslide2,.slideshow #imageslide3,.slideshow #imageslide4,.slideshow #imageslide5,.slideshow #imageslide6,.slideshow #imageslide7,.slideshow #imageslide8,.slideshow #imageslide9,.slideshow #imageslide10{
+        height: 60vh;
+        background-size: cover;
+    }
+
+    .slideshow-text{
+        background-color: transparent;
+        position: absolute;
+        width: 40%;
+        top: 30vh;
+        left: 7%;
+        z-index: 2000;
+        height: 100px;
+    }
+    
+    .slideshow-text h2{
+        color: white;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 800;
+    }
+
+    .videos{
+        width: 100%;
+        margin-top: 100px;
+        min-height: 300px;
+    }
+
+    .one #vid{
+        width: 90%;
+        height: 150px;
+        margin-left: 5%;
+    }
+
+    .trending-heading h2, .afrobeat-heading h2, .hippop-heading h2{
+        font-size: 18px;
+    }
+
+    .trending-heading a i, .afrobeat-heading a i, .hippop-heading a i{
+        font-size: 15px;
+    }
+    
+}

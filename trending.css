@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(31, 2, 31);
+    width: 11px;
+    border-radius: 20px;
+}
+
+
+body{
+    background-color: rgb(10, 2, 10);
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(31, 2, 31);
+    display: flex;
+    position: fixed;
+    z-index: 3000;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navmenu{
+    width: 10%;
+    height: 15vh;
+    background-color: transparent;
+}
+
+.sidebar{
+    position: fixed;
+    margin-top: 10px;
+    left: -250px;
+    width: 250px;
+    height: 45vh;
+    border-radius: 20px;
+    background-color: rgb(27, 4, 35);
+    transition: all .5s ease;
+    z-index: 11;
+}
+
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(26, 1, 26);
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+.sidebar ul li:hover a{
+    padding-left: 50px;
+
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#list form #searchbar, #searchmenu{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background-color: purple;
+    border-radius: 3%;
+}
+
+label #btn{
+    left: 5%;
+    top: 5vh;
+    font-size: 35px;
+    color: white;
+    padding: 4px 6px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+.navlogo{
+    left: 30%;
+    position: absolute;
+}
+
+.navlogo a h2{
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: purple;
+        transition: all .5s;
+}
+.navlogo a h2:hover{
+    font-size: 40px;
+    color: white;
+}
+ #logo{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+#logo:hover{
+    color: purple;
+}
+
+.navsearch{
+    margin-left:47%;
+    position: relative;
+}
+
+#search-bar{
+    width: 300px;
+    height: 30px;
+}
+
+#search-bar placeholder{
+    padding-left: 3%;
+}
+
+#search{
+    position: absolute;
+    left: 80%;
+    top: 3px;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+}
+
+main{
+    width: 100%;
+    padding-top: 15vh;
+    min-height: 800px;
+    display: flex;
+}
+
+.fixed_link{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    padding-top: 7vh;
+    background-color: rgb(10, 2, 10,);
+    border-right: 1px solid white;
+    overflow: auto;
+}
+
+.fixed_link .link-video a{
+    display: block;
+    height: 50%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 16px;
+    color: white;
+    padding-left: 50px;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+}
+
+.fixed_link .link-video li:hover a{
+    color: purple;
+}
+
+.fixed_link .link-video li #page{
+    color: purple;
+    text-decoration: underline;
+}
+
+ .link-best{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
+
+.fixed_link .link-best li a, .fixed_link .lib li a{
+    display: block;
+    height: 50%;
+    width: 100%;
+    line-height: 55px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+
+.fixed_link .link-best li:hover a, .fixed_link .lib li:hover a{
+    color: purple;
+}
+
+.fixed_link .lib{
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid black;
+    color: white;
+    font-size: 18px;
+}
+
+.trending_videos{
+    margin-left: 200px;
+    width: 80%;
+    min-height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+video{
+    width: 220px;
+    height: 250px;
+}
+
+.video_text{
+    color: white;
+    text-align: center;
+}
+
+.video_icons,.video_icons a{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video_icons i:hover{
+    color: purple;
+}
+
+.video_icons #animate{
+    color: purple;
+    animation-name: trending;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes trending{
+    0%{
+       transform: translateX(0px);
+    }
+
+    25%{
+        transform: translateX(1px);
+    }
+
+    50%{
+        transform: translateX(0px);
+    }
+
+    75%{
+        transform: translateX(-1px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+@media screen and (max-width:400px) {
+    nav{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(31, 2, 31);
+    }
+    
+    .navmenu{
+        width: 10%;
+        height: 15vh;
+        background-color: transparent;
+    }
+    
+    .sidebar{
+        position: fixed;
+        left: -300px;
+        width: 100px;
+        height: 50vh;
+        margin-top: 30px;
+        background-color: rgb(1, 1, 19);
+    }
+    
+    .sidebar header{
+        font-size: 10px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        background-color: rgb(26, 1, 26);
+        user-select: none;
+    }
+    
+    .sidebar ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 35px;
+        font-size: 10px;
+        color: white;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid black;
+    }
+    
+    ul li:hover a{
+        padding-left: 10px;
+    }
+    
+    .sidebar ul a i{
+        margin-right: 8px;
+    }
+    
+    #list form #searchbar, #searchmenu{
+        display: block;
+        position: relative;
+    }
+    #list form #searchbar{
+        width: 50px;
+        top: 4vh;
+        left: 22%;
+
+    }
+
+    #check{
+        display: none;
+    }
+    
+
+    label #btn,label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background-color: purple;
+        border-radius: 3%;
+    }
+    
+    label #btn{
+        left: 3%;
+        top: 5vh;
+        font-size: 9px;
+        color: white;
+        padding: 4px 9px;
+        transition: all .5s ease-in-out;
+    }
+    
+    label #cancel{
+        z-index: 1111;
+        left: -70px;
+        top: 4vh;
+        font-size: 10px;
+        color: white;
+        padding: 4px 9px;
+        transition: all .1s ease;
+    }
+    
+    #check:checked ~ .sidebar{
+        left: 0;
+    }
+    
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    #check:checked ~ label #cancel{
+        left: 70px;
+    }
+
+    .navlogo{
+        margin-left: -2%;
+        margin-top: 4vh;
+        z-index: 1;
+        display: inline;
+    }
+
+    .navlogo a{
+        display: inline;
+    }
+    
+    .navlogo a h2{
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        transition: all .5s;
+    }
+    .navlogo a h2:hover{
+        font-size: 14px;
+        color: white;
+    }
+     #logo{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    }
+    #logo:hover{
+        color: purple;
+    }
+
+    #search-bar{
+        /*margin-top: 4vh;*/
+        width: 150px;
+    }
+
+    .navsearch{
+        margin-top: 4vh;
+    }
+
+    .fixed_link{
+        width: 150px;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .fixed_link .link-video a{
+        padding-left: 20px;
+    }
+
+    .trending_videos{
+        margin-left: 150px;
+    }
+
+    video{
+        width: 150px;
+        height: 200px;
+    }
+
+
+}

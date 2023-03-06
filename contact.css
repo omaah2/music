@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(1, 1, 50, 0.1) url(/images/login\ background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    margin-top: 10vh;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Gabona;
+}
+
+main{
+    margin-top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-one, .contact-two, .contact-three{
+    display: flex;
+    margin-top: 10%;
+}
+
+
+.contact-one-a, .contact-two-a, .contact-three-a{
+    color: purple;
+    background-color: white;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px 5px;
+    border-radius: 50%;
+}
+
+.contact-one h5, .contact-two h5, .contact-three h5{
+    color: purple;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gabona;
+    margin-left: 5%;
+}
+
+.contact-one p, .contact-two p, .contact-three p{
+    color: white;
+    font-size: 16px;
+    font-family: Calibri;
+    font-weight: 300;
+    margin-left: 5%;
+}
+
+.contact-text{
+    height: 50vh;
+    width: 40%;
+    background-color: #0d0c0c;
+    border-radius: 25px;
+    padding: 3%;
+}
+
+label{
+    color: #fff;
+    font-size: 30px;
+    font-family: Gabona;
+    font-weight: 900;
+}
+
+input{
+    width: 100%;
+    background-color: #0d0c0c;
+    height: 10vh;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:1px solid black;
+}
+
+button{
+    margin-top: 3%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: purple;
+    border: none;
+    outline: none;
+}
+
+
+
+@media screen and (max-width:400px) {
+    .contact-text{
+        width: 90%;
+        margin: 10vh 5% 10vh 5%;
+
+    }
+}
+
+

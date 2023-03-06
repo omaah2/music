@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMAAHplayer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <linK rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+  <nav>
+    <div class="navmenu">
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="bi bi-list" id="btn"></i>
+        <i class="bi bi-x" id="cancel"></i>
+      </label>
+      <div class="sidebar">
+        <header>MENU</header>
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house-door-fill">HOME</i></a></li>
+          <li><a href="contact.html"><i class="bi bi-person-lines-fill">CONTACT US</i></a></li>
+          <li><a href="login.html"><i class="bi bi-person">LOGIN</i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navlogo">
+      <a href="index.html">
+        <h2>OMAAH<span id="logo">player</span></h2>
+      </a>
+    </div>
+    <div class="navsearch">
+      <form>
+        <input type="search" id="search-bar" placeholder="Search Videos (TRENDING)" list="artist-songs">
+        <datalist id="artist-songs">
+          <option value="Bandana ft. Asake">
+          <option value="Common Person-Burna Boy">
+          <option value="Buga (Lo Lo LO) ft.  Tekno">
+          <option value="Can't Help Falling In Love With You">
+          <option value="KPK">
+          <option value="Focus Simi">
+          <option value="Overloading">
+          <option value="I Don't Care-Ed Sheeran & Justin Bieber">
+          <option value="Arcade- Duncan Laurence">
+          <option value="Terminator">
+        </datalist>
+        <a href="#"><i class="bi bi-search" id="search"></i></a>
+      </form>
+    </div>
+  </nav>
+  
+  <main>
+    <div class="slideshow">
+      <div class="swiper">
+      
+        <div class="swiper-wrapper">
+          
+            <div class="swiper-slide" id="imageslide1"></div>
+            <div class="swiper-slide" id="imageslide2">S</div>
+            <div class="swiper-slide" id="imageslide3"></div>
+            <div class="swiper-slide" id="imageslide4"></div>
+            <div class="swiper-slide" id="imageslide5"></div>
+            <div class="swiper-slide" id="imageslide6"></div>
+            <div class="swiper-slide" id="imageslide7"></div>
+            <div class="swiper-slide" id="imageslide8">S</div>
+            <div class="swiper-slide" id="imageslide9">S</div>
+            <div class="swiper-slide" id="imageslide10">S</div>
+          </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+
+    <div class="slideshow-text">
+      <h2 class="input"></h2>
+      <!--<button type="button"><i class="bi bi-upload"></i>START WATCHING</button>-->
+    </div>
+    
+    <div class="videos">
+      
+      <div class="trending">
+        <div class="trending-heading">
+          <h2>TRENDING</h2>
+          <a href="trending.html"><i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="trending-video">
+          <div class="trending-one">
+            <div class="one">
+              <video id="vid" src="/videos/Trending1.mp4" controls></video>
+            </div>
+            <div class="two">
+              <h4>Charlie Puth</h4>
+              <h4>One Call Away</h4>
+              <p>3:20s</p>
+            </div>
+            <div class="three"><a href="#" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="trending-two">
+            <div class="one">
+              <video id="vid" src="/videos/Trending2.mp4" controls></video>
+            </div>
+            <div class="two">
+              <h4>Moana</h4>
+              <h4>How Far I will Go</h4>
+              <p>2:39s</p>
+            </div>
+            <div class="three"><a href="/videos/Trending2.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="trending-three">
+            <div class="one">
+              <video id="vid" src="/videos/Trending3.mp4" controls></video>
+            </div>
+            <div class="two">
+              <h4>Avicii ft and Rita Ora</h4>
+              <h4>  Lonely Together</h4>
+              <p>3:00s</p>
+            </div>
+            <div class="three"><a href="/videos/Trending3.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="afrobeat">
+        <div class="afrobeat-heading">
+          <h2>CLASSICAL</h2>
+          <a href="classical.html"><i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="afrobeat-video">
+          <div class="afrobeat-one">
+            <div class="one">
+              <video id="vid" src="/videos/Hits2.mp4" controls poster="/images/slide-three.jpeg"></video>
+            </div>
+            <div class="two">
+              <h4>Gregory Abolt</h4>
+              <h4>Shake It</h4>
+              <p>4:03s</p>
+            </div>
+            <div class="three"><a href="/videos/Hits2.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="afrobeat-two">
+            <div class="one">
+              <video id="vid" src="/videos/Hits4.mp4" controls poster="/images/download (12).jpeg"></video>
+            </div>
+            <div class="two">
+              <h4>Joe</h4>
+              <h4>I'll Prove It For You</h4>
+              <p>4:41s</p>
+            </div>
+            <div class="three"><a href="/videos/Hits4.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="afrobeat-three">
+            <div class="one">
+              <video id="vid" src="/videos/Local3.mp4" controls poster="/images/images (7).jpg"></video>
+            </div>
+            <div class="two">
+              <h4>Shainia Twain</h4>
+              <h4>Foverer And Always</h4>
+              <p>4:06s</p>
+            </div>
+            <div class="three"><a href="/videos/Local3.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="afrobeat">
+        <div class="afrobeat-heading">
+          <h2>GOSPEL</h2>
+          <a href="classical.html"><i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="afrobeat-video">
+          <div class="afrobeat-one">
+            <div class="one">
+              <video id="vid" src="/videos/Gospel1.mp4" controls></video>
+            </div>
+            <div class="two">
+              <h4>Gregory Abolt</h4>
+              <h4>Shake It</h4>
+              <p>4:03s</p>
+            </div>
+            <div class="three"><a href="/videos/Gospel1.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="afrobeat-two">
+            <div class="one">
+              <video id="vid" src="/videos/Gospel2.mp4" controls ></video>
+            </div>
+            <div class="two">
+              <h4>Joe</h4>
+              <h4>I'll Prove It For You</h4>
+              <p>4:41s</p>
+            </div>
+            <div class="three"><a href="/videos/Gospel2.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="afrobeat-three">
+            <div class="one">
+              <video id="vid" src="/videos/Gospel4.mp4" controls></video>
+            </div>
+            <div class="two">
+              <h4>Shainia Twain</h4>
+              <h4>Foverer And Always</h4>
+              <p>4:06s</p>
+            </div>
+            <div class="three"><a href="/videos/Gospel4.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="afrobeat">
+        <div class="afrobeat-heading">
+          <h2>LOCAL</h2>
+          <a href="classical.html"><i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="afrobeat-video">
+          <div class="afrobeat-one">
+            <div class="one">
+              <video id="vid" src="/videos/Hits2.mp4" controls poster="/images/slide-three.jpeg"></video>
+            </div>
+            <div class="two">
+              <h4>Gregory Abolt</h4>
+              <h4>Shake It</h4>
+              <p>4:03s</p>
+            </div>
+            <div class="three"><a href="/videos/Hits2.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="afrobeat-two">
+            <div class="one">
+              <video id="vid" src="/videos/Hits4.mp4" controls poster="/images/download (12).jpeg"></video>
+            </div>
+            <div class="two">
+              <h4>Joe</h4>
+              <h4>I'll Prove It For You</h4>
+              <p>4:41s</p>
+            </div>
+            <div class="three"><a href="/videos/Hits4.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="afrobeat-three">
+            <div class="one">
+              <video id="vid" src="/videos/Local3.mp4" controls poster="/images/images (7).jpg"></video>
+            </div>
+            <div class="two">
+              <h4>Shainia Twain</h4>
+              <h4>Foverer And Always</h4>
+              <p>4:06s</p>
+            </div>
+            <div class="three"><a href="/videos/Local3.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hippop">
+        <div class="hippop-heading">
+          <h2>HIP-POP</h2>
+          <a href="#"><i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="hippop-video">
+          <div class="hippop-one">
+            <div class="one">
+              <video id="vid" src="/videos/Hip-hop1.mp4" controls poster="/images/poster (1).jpeg"></video>
+            </div>
+            <div class="two">
+              <h4>Charlie Puth</h4>
+              <h4>One Call Away</h4>
+              <p>3:20s</p>
+            </div>
+            <div class="three"><a href="/videos/Hip-hop1.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="hippop-two">
+            <div class="one">
+              <video id="vid" src="/videos/Trending2.mp4" controls></video>
+            </div>
+            <div class="two">
+              <h4>Moana</h4>
+              <h4>How Far I will Go</h4>
+              <p>2:39s</p>
+            </div>
+            <div class="three"><a href="/videos/Trending2.mp4" download="" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+
+          <div class="hippop-three">
+            <div class="one">
+              <video id="vid" src="/videos/Trending3.mp4" controls></video>
+            </div>
+            <div class="two">
+              <h4>Avicii ft and Rita Ora</h4>
+              <h4>  Lonely Together</h4>
+              <p>3:00s</p>
+            </div>
+            <div class="three"><a href="/videos/Trending3.mp4" id="down">Download<i class="bi bi-download"></i></a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-hover">
+          <img src="/images/best.png">
+        </div>
+
+          <div class="content">
+              <img src="/images/Nigeria.jpeg" alt="Nigeria artists">
+              <h2>#1</h2>
+              <h3>Top Ten</h3>
+              <p>Nigeria Songs</p>
+              <a href="#"><i class="bi bi-chevron-right"></i></a>
+          </div>
+      </div>
+      <div class="card">
+        <div class="card-hover">
+          <img src="/images/best1.png">
+        </div>
+          <div class="content">
+              <img src="/images/Africa.jpeg" alt="African artists">
+              <h2>#1</h2>
+              <h3>Top Ten</h3>
+              <p>African Songs</p>
+              <a href="#"><i class="bi bi-chevron-right"></i></a>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-hover">
+            <img src="/images/best2.png">
+          </div>
+          <div class="content">
+              <img src="/images/International.jpeg">
+              <h2>All</h2>
+              <h3>Over The World</h3>
+              <p>We Are "GOING INTERNATIONAL"</p>
+              <a href="#"><i class="bi bi-chevron-right"></i></a>
+          </div>
+      </div>
+  </div>
+
+  </main>  
+
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+
+    <ul class="social_icons">
+      <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+      <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+      <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+      <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+    </ul>
+
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <p><i class="bi bi-c-circle"></i>2021 | All Rights Reserved</p>
+  </footer>
+
+  <div class="contact">
+    <a href="contact.html" id="cnct"><b>CONTACT US</b><i class="bi bi-person"></i></a>
+    <a href="contact.html" class="cont"><i id="cont" class="bi bi-whatsapp"></i></a>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay:{
+        delay: 3000,
+        disableOnInteration: false,
+      },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+});
+
+
+    var typed = new Typed(".input", {
+      strings:["We Got Your Music Videos", "Of All Time.", "With Your Favourite ARTISTS."],
+      typeSpeed:70,
+      backSpeed: 60,
+      loop:true 
+    });
+  </script>
+</body>
+</html>
